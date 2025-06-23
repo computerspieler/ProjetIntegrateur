@@ -1,0 +1,29 @@
+[project]
+name = "projetinte"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "adv-lib",
+    "cellpose>=4.0.4",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "numba>=0.61.2",
+    "torch>=2.7.1",
+    "torchvision>=0.22.1",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux'" },
+]
+adv-lib = { git = "https://github.com/jeromerony/adversarial-library" }

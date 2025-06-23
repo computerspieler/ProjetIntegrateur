@@ -1,0 +1,17 @@
+[project]
+name = "stardist-exp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gputools>=0.2.16",
+    "graphviz>=0.21",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.3",
+    "numpy<2",
+    "pillow>=11.2.1",
+    "pydot>=4.0.1",
+    "stardist>=0.9.1",
+    "tensorflow[and-cuda]>=2.18.1",
+]

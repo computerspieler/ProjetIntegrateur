@@ -1,0 +1,21 @@
+*/__pycache__
+*.tiff
+*.json
+*.png
+*.jpg
+*.tif
+*/.venv
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*.dat
+*/logs/*
+*.v2
